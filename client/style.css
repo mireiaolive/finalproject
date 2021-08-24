@@ -285,8 +285,9 @@ h2 {
 }
 
 .messages {
+    color: black;
     align-self: center;
     background-color: rgb(252, 206, 213);
     width: 800px;
-    height: 30px;
+    height: 160px;
 }

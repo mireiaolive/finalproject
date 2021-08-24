@@ -18,10 +18,9 @@ const store = createStore(
 
 axios.get("/user/id.json").then(function ({ data }) {
     if (!data.userId) {
-        init(store);
-
         ReactDOM.render(<Welcome />, document.querySelector("main"));
     } else {
+        init(store);
         ReactDOM.render(
             <Provider store={store}>
                 <App />

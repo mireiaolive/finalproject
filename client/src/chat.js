@@ -5,6 +5,7 @@ export function Chat() {
     const messages = useSelector((state) => state.messages);
 
     const handleKey = (event) => {
+        console.log(socket);
         console.log(event.target.value);
         if (event.key === "Enter") {
             event.preventDefault();

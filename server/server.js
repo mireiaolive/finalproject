@@ -415,6 +415,7 @@ server.listen(process.env.PORT || 3001, function () {
 });
 
 //socket
+//socket.io adds to socket objects a request property.
 io.on("connection", function (socket) {
     const userId = socket.request.session.userId;
     if (!userId) {
@@ -424,7 +425,6 @@ io.on("connection", function (socket) {
         "socket.request.session.userId:",
         socket.request.session.userId
     );
-    console.log("userId", userId);
 
     db.getLastMessages()
         .then(({ rows }) => {
@@ -436,7 +436,6 @@ io.on("connection", function (socket) {
         });
 
     socket.on("new-message", (data) => {
-        console.log("see data new message: ", data);
         db.addMessage(data, userId)
             .then(() => {
                 console.log("added messages");
