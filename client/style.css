@@ -1,0 +1,292 @@
+body {
+    background-color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.error {
+    text-align: center;
+}
+
+input,
+button {
+    align-self: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+input {
+    width: 250px;
+}
+
+button {
+    width: 100px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
+    background-color: #333333;
+}
+
+.img-logo-app img {
+    align-self: flex-start;
+    width: 60px;
+    margin-left: 20px;
+}
+
+.profile-pic-app {
+    align-self: flex-end;
+}
+
+.link {
+    text-decoration: none;
+    align-self: center;
+    cursor: pointer;
+    color: #fa2b43;
+}
+
+a:hover {
+    transition: 0.4s;
+    text-decoration: underline;
+}
+
+.img-profile {
+    cursor: pointer;
+    margin-left: 50px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+}
+
+.img-logo {
+    width: 60px;
+    height: 60px;
+}
+
+.registration {
+    margin-top: 200px;
+}
+.profile p,
+h2 {
+    line-height: 5px;
+    text-align: center;
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.up-text {
+    text-align: center;
+}
+
+.uploader {
+    z-index: 1;
+    position: fixed;
+    top: 4%;
+    right: 7%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #a5a5a5;
+    opacity: 0.8;
+    border-radius: 10px;
+    width: 480px;
+    height: 150px;
+    justify-content: center;
+    align-content: center;
+}
+
+.close {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 2%;
+    text-align: end;
+}
+
+.modal {
+    cursor: pointer;
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+
+.profile-big {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.profile-box {
+    font-size: 20px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+}
+
+.profile-bio {
+    margin-left: 30px;
+    align-self: center;
+}
+
+.edit-bio {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+}
+
+.add-bio {
+    color: red;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.findpeople {
+    display: flex;
+    justify-content: flex-end;
+    width: 81%;
+    font-size: 16px;
+}
+
+.findpeople a {
+    margin-left: 18px;
+    font-weight: 100;
+    color: #a5a5a5;
+    text-decoration: none;
+}
+.findpeople a:hover {
+    color: white;
+    transition: 0.4s;
+}
+
+.main-container {
+    padding-left: 20px;
+}
+
+.results-container {
+    padding-top: 5px;
+}
+
+.results-container h1,
+h2 {
+    text-align: left;
+}
+
+.box a {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    text-decoration: none;
+    color: black;
+}
+
+.box a:hover {
+    transition: 0.4s;
+    color: #a5a5a5;
+}
+
+.box p {
+    align-self: center;
+}
+
+.img-box {
+    border-radius: 50%;
+    padding: 10px;
+    width: 170px;
+    height: 170px;
+}
+
+.btn {
+    cursor: pointer;
+    margin-top: 50px;
+    width: 170px;
+    height: 30px;
+}
+
+.center-button {
+    text-align: center;
+    margin: -30px;
+}
+
+.friends-wannabees {
+    display: flex;
+    height: 900px;
+    flex-direction: column;
+}
+
+.friends-wannabees h1 {
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.friends-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 24px;
+}
+
+.friends {
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 200px;
+}
+
+.friends img {
+    margin-left: 30px;
+}
+
+.message-write {
+    align-self: center;
+}
+
+.textarea {
+    width: 800px;
+    height: 30px;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    background-color: blanchedalmond;
+}
+
+.messages {
+    align-self: center;
+    background-color: rgb(252, 206, 213);
+    width: 800px;
+    height: 30px;
+}
