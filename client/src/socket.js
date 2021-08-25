@@ -16,8 +16,9 @@ export const init = (store) => {
             store.dispatch(chatMessagesReceived(data))
         );
 
-        socket.on("chatMessage", (data) =>
-            store.dispatch(chatMessageReceived(data))
-        );
+        socket.on("chatMessage", (data) => {
+            console.log("see data: ", data);
+            store.dispatch(chatMessageReceived(data));
+        });
     }
 };

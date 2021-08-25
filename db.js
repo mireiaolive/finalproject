@@ -132,12 +132,11 @@ module.exports.getFriendsAndWannabees = (id) => {
     );
 };
 
-//addMessage(text, userId): an INSERT query to save a new chat message
-module.exports.addMessage = (text, user_id) => {
+module.exports.addMessage = (txt, id) => {
     return db.query(
         `INSERT INTO messages(text, user_id)
-        VALUES ($1,$2)`,
-        [text, user_id]
+    VALUES($1, $2)`,
+        [txt, id]
     );
 };
 

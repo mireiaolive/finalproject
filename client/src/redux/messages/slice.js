@@ -16,12 +16,12 @@ export function messagesReducer(state = [], action) {
 export function chatMessagesReceived(messages) {
     return {
         type: "messages/recent",
-        payload: messages,
+        payload: { messages },
     };
 }
-export function chatMessageReceived(messages) {
+export function chatMessageReceived(message) {
     return {
         type: "messages/add",
-        payload: messages,
+        payload: { message },
     };
 }

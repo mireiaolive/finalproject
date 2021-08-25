@@ -421,10 +421,7 @@ io.on("connection", function (socket) {
     if (!userId) {
         return socket.disconnect(true);
     }
-    console.log(
-        "socket.request.session.userId:",
-        socket.request.session.userId
-    );
+    console.log("userId:", userId);
 
     db.getLastMessages()
         .then(({ rows }) => {
@@ -435,9 +432,14 @@ io.on("connection", function (socket) {
             console.log("error in socket: ", err);
         });
 
-    socket.on("new-message", (data) => {
-        db.addMessage(data, userId)
+    socket.on("newmessage", (message) => {
+        console.log(message, userId);
+        db.addMessage(message, userId)
             .then(() => {
+                db.getLastMessages().then(({ rows }) => {
+                    console.log("add info:", rows);
+                    io.emit("chatMessage", rows[0]);
+                });
                 console.log("added messages");
             })
             .catch((err) => {

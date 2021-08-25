@@ -271,23 +271,46 @@ h2 {
 
 .message-write {
     align-self: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .textarea {
     width: 800px;
-    height: 30px;
+    height: 40px;
 }
 
 .message-container {
     display: flex;
     flex-direction: column;
-    background-color: blanchedalmond;
+    background-color: rgb(250, 234, 229);
 }
 
-.messages {
-    color: black;
+.messages-display {
     align-self: center;
-    background-color: rgb(252, 206, 213);
     width: 800px;
-    height: 160px;
+    height: 200px;
+    border-radius: 5px;
+    flex-direction: column-reverse;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.container-user {
+    display: flex;
+    margin-bottom: 5px;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+}
+
+.container-user img {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 35px;
+    height: 35px;
+}
+
+.container-user p {
+    margin-right: 5px;
 }
