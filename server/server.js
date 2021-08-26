@@ -415,7 +415,7 @@ server.listen(process.env.PORT || 3001, function () {
 });
 
 //socket
-//socket.io adds to socket objects a request property.
+//socket.io adds to socket objects a request property
 io.on("connection", function (socket) {
     const userId = socket.request.session.userId;
     if (!userId) {

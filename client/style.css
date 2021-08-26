@@ -374,3 +374,13 @@ h2 {
     margin-right: 750px;
     color: white;
 }
+
+.results-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.title-search {
+    font-size: 26px;
+    font-weight: 700;
+}

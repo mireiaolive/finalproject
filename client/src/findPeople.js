@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import Audio from "./audio";
 
 export default function FindPeople() {
     // console.log("properties from parent:", props);
@@ -37,13 +38,14 @@ export default function FindPeople() {
             <div className="search-input">
                 <p>See what happened recently</p>
                 <input
-                    placeholder="Enter name"
+                    placeholder="search"
                     type="text"
                     name="find-input"
                     onChange={(e) => setSearchTerm(e.target.value)}
                 />
             </div>
             <div className="results-box">
+                <p className="title-search">New users</p>
                 {!searchTerm &&
                     users.map((user) => (
                         <div key={user.id}>
@@ -81,6 +83,8 @@ export default function FindPeople() {
                         </div>
                     ))}
             </div>
+            <p className="title-search">New music</p>
+            <Audio />
         </div>
     );
 }

@@ -47,7 +47,7 @@ export function Chat() {
                 <div className="message-write">
                     <textarea
                         className="textarea"
-                        placeholder="Write a comment"
+                        placeholder="Write a comment.."
                         onKeyPress={handleKey}
                     ></textarea>
                 </div>
