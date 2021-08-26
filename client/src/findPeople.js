@@ -34,13 +34,8 @@ export default function FindPeople() {
     //Rendering will involve converting an array of user objects into elements, done with map
     return (
         <div className="main-container">
-            <div className="results-container">
-                <h1>Find People</h1>
-                <h2>Checkout who recently joined!</h2>
-            </div>
-
             <div className="search-input">
-                <p>Are you looking for someone in particular?</p>
+                <p>See what happened recently</p>
                 <input
                     placeholder="Enter name"
                     type="text"

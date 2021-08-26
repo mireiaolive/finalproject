@@ -277,7 +277,9 @@ h2 {
 
 .textarea {
     width: 800px;
+    background-color: #eeecec;
     height: 40px;
+    border: 1px solid black;
 }
 
 .message-container {
@@ -287,30 +289,79 @@ h2 {
 }
 
 .messages-display {
+    background-color: white;
+    border-radius: 50%;
+    border: 0.5px solid grey;
     align-self: center;
     width: 800px;
-    height: 200px;
+    height: 300px;
     border-radius: 5px;
     flex-direction: column-reverse;
     display: flex;
-    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .container-user {
+    padding: 6px;
     display: flex;
     margin-bottom: 5px;
     flex-direction: row;
     align-items: center;
-    height: 40px;
+    height: 50px;
 }
 
 .container-user img {
+    margin-top: 10px;
     border-radius: 50%;
     margin-right: 20px;
     width: 35px;
     height: 35px;
+    align-self: center;
 }
 
 .container-user p {
     margin-right: 5px;
+}
+
+.audio-file {
+    align-self: center;
+    padding: 30px;
+}
+
+.audio img {
+    width: 660px;
+    height: 110px;
+}
+
+.img-audio img {
+    align-self: center;
+    width: 300px;
+    height: 50px;
+}
+
+.search-input {
+    font-size: 24px;
+}
+
+.friends-wannabees p {
+    font-size: 24px;
+    margin-left: 15px;
+}
+
+.container-user-flex {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+}
+
+.container-user-flex p {
+    font-size: 14px;
+}
+
+.text {
+    font-size: 14px;
+}
+
+.color {
+    color: grey;
 }

@@ -73,7 +73,7 @@ export default class App extends Component {
 
                         <div className="findpeople">
                             <Link to="/chat">Upload</Link>
-                            <Link to="/findpeople">Find people</Link>
+                            <Link to="/findpeople">Search</Link>
                             <Link to="/friends">Friends</Link>
                             <Link to="/logout">Sign Out</Link>
                         </div>

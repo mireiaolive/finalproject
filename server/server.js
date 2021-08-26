@@ -426,7 +426,7 @@ io.on("connection", function (socket) {
     db.getLastMessages()
         .then(({ rows }) => {
             console.log("last-10-messages", rows);
-            socket.emit("chatMessages", rows);
+            socket.emit("chatMessages", rows.reverse());
         })
         .catch((err) => {
             console.log("error in socket: ", err);

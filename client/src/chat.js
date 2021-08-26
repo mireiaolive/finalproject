@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import { socket } from "./socket";
+import Audio from "./audio";
 
 export function Chat() {
     const messages = useSelector((state) => state.messages);
@@ -19,13 +20,8 @@ export function Chat() {
     return (
         <section>
             <div className="message-container">
-                <h1>Chat</h1>
-                <div className="message-write">
-                    <textarea
-                        className="textarea"
-                        placeholder="Write a comment"
-                        onKeyPress={handleKey}
-                    ></textarea>
+                <div className="audio-file">
+                    <Audio />
                 </div>
                 <div className="messages-display">
                     {messages &&
@@ -36,14 +32,24 @@ export function Chat() {
                                     key={message.id}
                                 >
                                     <img src={message.imageurl} />
-                                    <p>
-                                        {message.first} {message.last}
-                                    </p>
-
-                                    <div>said.. {message.text}</div>
+                                    <div className="container-user-flex">
+                                        <p className="color">
+                                            {message.first} {message.last}
+                                        </p>
+                                        <div className="text">
+                                            <div>{message.text}</div>
+                                        </div>
+                                    </div>
                                 </div>
                             );
                         })}
+                </div>
+                <div className="message-write">
+                    <textarea
+                        className="textarea"
+                        placeholder="Write a comment"
+                        onKeyPress={handleKey}
+                    ></textarea>
                 </div>
             </div>
         </section>

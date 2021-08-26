@@ -61,7 +61,7 @@ export default function Friends() {
 
     return (
         <div className="friends-wannabees">
-            <h1>Your friends</h1>
+            <p>Your friends</p>
             <section className="friends">
                 {friends &&
                     friends.map((friend) => {
@@ -88,7 +88,7 @@ export default function Friends() {
                         );
                     })}
             </section>
-            <h1>Friends request</h1>
+            <p>Friends request</p>
             <section className="friends">
                 {wannabees &&
                     wannabees.map((wannabee) => (
