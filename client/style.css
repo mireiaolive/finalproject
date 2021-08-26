@@ -52,7 +52,7 @@ button {
 .img-logo-app img {
     align-self: flex-start;
     width: 60px;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 .profile-pic-app {
@@ -276,16 +276,20 @@ h2 {
 }
 
 .textarea {
-    width: 800px;
+    width: 785px;
+    margin-top: 10px;
+    padding: 10px;
     background-color: #eeecec;
     height: 40px;
     border: 1px solid black;
+    border-radius: 10px;
 }
 
 .message-container {
     display: flex;
     flex-direction: column;
     background-color: rgb(250, 234, 229);
+    padding-bottom: 200px;
 }
 
 .messages-display {
@@ -364,4 +368,9 @@ h2 {
 
 .color {
     color: grey;
+}
+
+.title {
+    margin-right: 750px;
+    color: white;
 }

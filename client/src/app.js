@@ -72,6 +72,13 @@ export default class App extends Component {
                         </div>
 
                         <div className="findpeople">
+                            <Link
+                                style={{ color: "white" }}
+                                className="title"
+                                to="/"
+                            >
+                                Music App
+                            </Link>
                             <Link to="/chat">Upload</Link>
                             <Link to="/findpeople">Search</Link>
                             <Link to="/friends">Friends</Link>
