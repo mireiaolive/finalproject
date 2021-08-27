@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import { socket } from "./socket";
 import Audio from "./audio";
+import Moment from "react-moment";
 
 export function Chat() {
     const messages = useSelector((state) => state.messages);
@@ -38,6 +39,9 @@ export function Chat() {
                                         </p>
                                         <div className="text">
                                             <div>{message.text}</div>
+                                            <Moment toNow className="time">
+                                                {message.created_at}
+                                            </Moment>
                                         </div>
                                     </div>
                                 </div>
